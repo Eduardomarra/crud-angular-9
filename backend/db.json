@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Caneta Bic Preta",
+            "price": 5.89
+        },
+        {
+            "id": 2,
+            "name": "Notebook Acer Aspire E1",
+            "price": 3299.00
+        },
+        {
+            "id": 3,
+            "name": "Iphone 14 Max",
+            "price": 5000.99
+        }
+    ]
+}

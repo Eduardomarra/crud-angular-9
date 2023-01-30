@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+
+  span:nth-last-child(1) {
+
+    a {
+        display: flex;
+      align-items: center;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}

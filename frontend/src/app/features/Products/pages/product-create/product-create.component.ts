@@ -10,7 +10,7 @@ import { ProductService } from 'src/app/shared/services/product.service';
 })
 export class ProductCreateComponent implements OnInit {
 
-  product: Product = {
+  products: Product = {
     name: "",
     price: null
   }
@@ -25,7 +25,7 @@ export class ProductCreateComponent implements OnInit {
   }
 
   createProduct(): void {
-    this.productService.create(this.product, "products").subscribe(() =>{
+    this.productService.create(this.products, "products").subscribe(() =>{
       this.productService.showMessage('Produto criado com sucesso!')
       this.router.navigateByUrl("products")
     })

@@ -13,6 +13,16 @@ a{
 li {
   list-style: none;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+button {
+  width: 150px;
+  margin: 30px 20px 0 0 ;
+}
+
 
 .color-blue {
   color: #3F51B5;

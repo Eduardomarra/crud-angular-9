@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavComponent } from './Navigation/nav/nav.component';
 import { AppRoutingModule } from '../app-routing.module';
@@ -12,11 +12,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input'
+import {MatTableModule} from '@angular/material/table';
 
 import { ProductCrudComponent } from './Products/pages/product-crud/product-crud.component';
 import { ProductCreateComponent } from './Products/pages/product-create/product-create.component'
 
+import localePt from '@angular/common/locales/pt'
+import { registerLocaleData } from '@angular/common'
 
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [NavComponent, HomeComponent, ProductCrudComponent, ProductCreateComponent],
@@ -30,10 +34,15 @@ import { ProductCreateComponent } from './Products/pages/product-create/product-
     MatSnackBarModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatTableModule
   ],
   exports: [
     NavComponent
-  ]
+  ],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  }]
 })
 export class FeaturesModule { }

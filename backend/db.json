@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Iphone 14 Max",
       "price": 5000.99
+    },
+    {
+      "name": "Teste 1",
+      "price": "100",
+      "id": 4
     }
   ]
 }

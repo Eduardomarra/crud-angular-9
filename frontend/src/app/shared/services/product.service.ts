@@ -27,4 +27,8 @@ export class ProductService {
   create( product: Product, page: string ): Observable<Product> {
     return this.httpClient.post<Product>(`${this.baseUrl}/${page}`, product)
   }
+
+  readProduct(page: string): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(`${this.baseUrl}/${page}`)
+  }
 }

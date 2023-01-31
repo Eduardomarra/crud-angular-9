@@ -28,4 +28,10 @@ export class ProductCrudComponent implements OnInit {
     this.router.navigateByUrl('products/create')
   }
 
+  delete(idProduct: number) {
+    this.productService.deleteProduct(idProduct, "products").subscribe(() => {
+      this.productService.showMessage("Produto excluido com sucesso!")
+    });
+  }
+
 }

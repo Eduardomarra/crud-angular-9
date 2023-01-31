@@ -18,12 +18,14 @@ import { ProductCrudComponent } from './Products/pages/product-crud/product-crud
 import { ProductCreateComponent } from './Products/pages/product-create/product-create.component'
 
 import localePt from '@angular/common/locales/pt'
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
+import { ProductUpdateComponent } from './Products/pages/product-update/product-update.component';
+import { ProductDeleteComponent } from './Products/pages/product-delete/product-delete.component'
 
 registerLocaleData(localePt);
 
 @NgModule({
-  declarations: [NavComponent, HomeComponent, ProductCrudComponent, ProductCreateComponent],
+  declarations: [NavComponent, HomeComponent, ProductCrudComponent, ProductCreateComponent, ProductUpdateComponent, ProductDeleteComponent],
   imports: [
     CommonModule,
     MatSidenavModule,

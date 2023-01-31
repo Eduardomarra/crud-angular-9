@@ -9,6 +9,8 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/home/home.component'
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 import { ProductCrudComponent } from './Products/pages/product-crud/product-crud.component';
 import { ProductCreateComponent } from './Products/pages/product-create/product-create.component'
 
@@ -22,7 +24,8 @@ import { ProductCreateComponent } from './Products/pages/product-create/product-
     MatListModule,
     MatCardModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   exports: [
     NavComponent
